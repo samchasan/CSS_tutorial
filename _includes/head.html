@@ -3,8 +3,33 @@ It contains useful data about the page, for use by the browser
 And by screen readers. -->
 
 <head>
-  <title>Test Page: Don't Panic</title>
-  <meta charset="utf-8">
+  {% if page.title %}
+      <title>{{ page.title }}</title>
+      <meta property="og:title" content="{{ page.title }}" />
+
+    {% else %}
+      <title>Test Page: Don't Panic</title>
+      <meta property="og:title" content="OG Test Page: Don't Panic" />
+
+    {% endif %}
+
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        <meta property="og:description"
+          content="{{ page.description }}" />
+      {% else %}
+        <meta name="description" content="This is a dangerous site.">
+        <meta property="og:description"
+          content="This is a dangerous OG site." />
+      {% endif %}
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+  <link rel="stylesheet"
+          href="/fonts/webfonts/css/fontawesome-all.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
