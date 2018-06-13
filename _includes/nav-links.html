@@ -1,5 +1,18 @@
-<li><a href="/">Home</a></li>
+<li><a href="/">HOME</a></li>
+
 <li><a href="/gallery">Gallery</a></li>
+<li><a href="/shop">Store</a></li>
+
+<li class="dropdown">
+  <a class="drop-trigger"href="/blog">PORTFLIO</a>
+  <ul class="drop-menu">
+    <li><a id="drop-down-portfolio-link-one" href="/">ART</a></li>
+<li><a href="/">DESIGN</a></li>
+<li><a href="/">VIDEO</a></li>
+<li><a href="/">SCULPTURE</a></li>
+<li><a href="/">ACTING</a></li>
+  </ul>
+
 <li class="dropdown">
   <a class="drop-trigger"href="/blog">Blog</a>
   <ul class="drop-menu">
@@ -9,4 +22,5 @@
     {% endfor %}
   </ul>
 </li>
-<li><a href="{{ site.posts.first.url }}">Newest Post</a></li>
+
+<li><a href="/about">About</a></li>

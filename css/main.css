@@ -96,11 +96,11 @@ body {
   box-sizing: border-box;
   display: block;
   height: 10vh;
-  left: -30px;
-  padding-top: 10px;
+  left: -20px;
+  padding-top: 20px;
   position: relative;
   text-align: center;
-  width: 10vh;
+  width: 15vh;
 }
 
 .header-logo:hover, .header-logo:active {
@@ -108,7 +108,8 @@ body {
 }
 
 .header-logo img {
-  width: 4.3vh;
+  width: 10.3vh;
+
 }
 
 .header-nav {
@@ -201,10 +202,12 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   display: none;
   list-style: none;
-  padding: 1em 0 0;
+  padding: 1em 1 1;
   position: absolute;
   right: 0;
   z-index: 9;
+  border: 1px;
+  border-color: fff;
 }
 
 .drop-menu:before {
@@ -230,9 +233,13 @@ body {
   border-radius: 5px 5px 0 0;
   color: #999;
   font-size: 0.5em;
-  padding: 1em 1em 0.25em;
+  /* padding: 1em 1em 0.25em; */
   text-align: right;
   text-transform: uppercase;
+}
+
+#drop-menu-portfolio-link-one{
+  padding: 0;
 }
 
 .drop-menu li:last-child {
@@ -318,8 +325,8 @@ body {
 }
 
 .hero-home {
-  background-position: center top;
-  background-image: url(/images/shark.jpg);
+  background-position: left;
+  background-image: url(/images/cubes.jpg);
 }
 
 .hero-content {
